@@ -265,3 +265,72 @@ span {
     padding: 2px 4px;
     border-radius: 3px;
 }
+
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+
+    .book-card, .reader-card, .card-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .Makaka {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-card, .reader-card, .card-item {
+        width: calc(50% - 20px); /* Adjust width for medium screens */
+    }
+
+    .tab-button {
+        font-size: 16px;
+        padding: 10px 15px; /* Reduced padding for smaller buttons */
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 2rem; /* Adjusted title size */
+    }
+}
+
+@media (max-width: 480px) {
+    .book-card, .reader-card, .card-item {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .tab-button {
+        font-size: 14px; /* Further reduced button size */
+        padding: 8px 10px; /* Further reduced padding */
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width input */
+    }
+}
